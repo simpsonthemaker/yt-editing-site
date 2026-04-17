@@ -167,12 +167,12 @@
 
   .hero h1 {
     font-family: var(--serif);
-    font-size: clamp(36px, 5.5vw, 52px);
+    font-size: clamp(48px, 7vw, 80px);
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.05;
     letter-spacing: -0.02em;
     margin-bottom: 1.5rem;
-    max-width: 640px;
+    max-width: 720px;
   }
 
   .hero h1 em {
@@ -250,6 +250,21 @@
   .btn-secondary svg {
     width: 14px;
     height: 14px;
+  }
+
+  /* Hero showcase image */
+  .hero-showcase {
+    max-width: 1100px;
+    margin: 0 auto 5rem;
+    padding: 0 2rem;
+  }
+
+  .hero-showcase img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.18);
   }
 
   /* Sections */
@@ -713,6 +728,8 @@
     .upcoming-grid { grid-template-columns: 1fr; }
     .nav-links a:not(.nav-cta) { display: none; }
     .hero { padding-top: 100px; }
+    .hero-showcase { padding: 0 1rem; margin-bottom: 3rem; }
+    .hero-showcase img { border-radius: 12px; }
     .footer { flex-direction: column; }
   }
 </style>
@@ -748,6 +765,11 @@
     </a>
   </div>
 </header>
+
+<!-- Hero showcase -->
+<section class="hero-showcase reveal d5">
+  <img src="hero.png" alt="Calgary show home interior — the kind of footage we edit every week" loading="lazy" />
+</section>
 
 <!-- How it works -->
 <section class="section" id="how">
