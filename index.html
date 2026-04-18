@@ -198,8 +198,10 @@
   .btn-primary {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 12px 24px;
+    min-width: 200px;
     background: var(--text);
     color: var(--surface);
     border: none;
@@ -228,8 +230,10 @@
   .btn-secondary {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 12px 24px;
+    min-width: 200px;
     background: transparent;
     color: var(--text);
     border: 0.5px solid rgba(0,0,0,0.15);
@@ -419,6 +423,53 @@
     margin-top: 2px;
     width: 16px;
     height: 16px;
+  }
+
+  /* Onboarding card */
+  .onboarding-card {
+    background: var(--surface);
+    border: 0.5px solid var(--border);
+    border-radius: 14px;
+    padding: 1.75rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .onboarding-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 0.85rem;
+  }
+
+  .onboarding-eyebrow::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+  }
+
+  .onboarding-card h4 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+    color: var(--text);
+  }
+
+  .onboarding-lede {
+    font-size: 14px;
+    color: var(--text-mid);
+    margin-bottom: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .onboarding-card .check-list {
+    columns: 1;
   }
 
   /* Why us */
@@ -707,6 +758,9 @@
     .hero { padding-top: 100px; }
     .hero-showcase { padding: 0 1rem; margin-bottom: 3rem; }
     .hero-showcase img { border-radius: 12px; }
+    .hero-ctas { flex-direction: column; align-items: stretch; }
+    .hero-ctas .btn-primary,
+    .hero-ctas .btn-secondary { width: 100%; min-width: 0; }
     .footer { flex-direction: column; }
   }
 </style>
@@ -729,7 +783,7 @@
 
 <!-- Hero -->
 <header class="hero">
-  <div class="hero-badge reveal d1">Accepting new clients</div>
+  <div class="hero-badge reveal d1">Accepting new editing clients</div>
   <h1 class="reveal d2">Real&nbsp;Estate YouTube,<br><em>never misses a week.</em></h1>
   <p class="hero-sub reveal d3">We edit your real estate YouTube videos so you can focus on filming, selling, and showing up consistently. Run by a Calgary realtor who does the same thing you do.</p>
   <div class="hero-ctas reveal d4">
@@ -795,6 +849,17 @@
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Custom thumbnail per video</li>
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Search-optimized titles &amp; descriptions</li>
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Quarterly strategy reviews</li>
+    </ul>
+  </div>
+
+  <div class="onboarding-card reveal d6">
+    <span class="onboarding-eyebrow">First month includes</span>
+    <h4>Onboarding session</h4>
+    <p class="onboarding-lede">Before we cut a single video, we plan the channel.</p>
+    <ul class="check-list">
+      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Go over channel inspiration &amp; references</li>
+      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Map out your channel pillars (3&ndash;5 video themes)</li>
+      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Custom 3-month content plan</li>
     </ul>
   </div>
 </section>
