@@ -421,48 +421,6 @@
     height: 16px;
   }
 
-  /* Coming soon */
-  .upcoming-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 1.5rem;
-  }
-
-  .upcoming-card {
-    background: var(--surface-alt);
-    border-radius: 12px;
-    padding: 1.25rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .upcoming-card::after {
-    content: 'Soon';
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    font-size: 10px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    border: 0.5px solid rgba(0,0,0,0.1);
-    padding: 2px 8px;
-    border-radius: 100px;
-  }
-
-  .upcoming-card h4 {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 4px;
-  }
-
-  .upcoming-card p {
-    font-size: 13px;
-    color: var(--text-mid);
-    line-height: 1.6;
-  }
-
   /* Why us */
   .why-block {
     display: grid;
@@ -496,12 +454,32 @@
   .footer {
     max-width: 800px;
     margin: 0 auto;
-    padding: 3rem 2rem 4rem;
+    padding: 3rem 2rem 2rem;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
     flex-wrap: wrap;
+  }
+
+  .footer-meta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 3rem;
+    border-top: 0.5px solid var(--border);
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: var(--text-light);
+  }
+
+  .footer-meta p {
+    margin: 0;
+  }
+
+  .footer-brand {
+    font-weight: 500;
+    color: var(--text-mid);
   }
 
   .footer-sig {
@@ -725,7 +703,6 @@
   @media (max-width: 600px) {
     .steps { grid-template-columns: 1fr; }
     .check-list { columns: 1; }
-    .upcoming-grid { grid-template-columns: 1fr; }
     .nav-links a:not(.nav-cta) { display: none; }
     .hero { padding-top: 100px; }
     .hero-showcase { padding: 0 1rem; margin-bottom: 3rem; }
@@ -814,22 +791,11 @@
     <ul class="check-list">
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Full edit with cuts, pacing, flow</li>
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Color correction &amp; audio cleanup</li>
-      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Titles, lower thirds, branded outro</li>
+      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Lower thirds, graphics &amp; branded outro</li>
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Custom thumbnail per video</li>
-      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Quarterly strategy &amp; analytics review sessions</li>
-      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>One round of revisions included</li>
+      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Search-optimized titles &amp; descriptions</li>
+      <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Quarterly strategy reviews</li>
     </ul>
-  </div>
-
-  <div class="upcoming-grid reveal d6">
-    <div class="upcoming-card">
-      <h4>Short-form clips</h4>
-      <p>Repurpose each long-form video into 3 vertical clips for Reels, Shorts, and TikTok.</p>
-    </div>
-    <div class="upcoming-card">
-      <h4>SEO + strategy</h4>
-      <p>Title optimization, descriptions, and tags so your videos actually get found.</p>
-    </div>
   </div>
 </section>
 
@@ -930,6 +896,14 @@
     </div>
   </div>
   <div class="footer-links">
-    <a href="https://youtube.com/@morelifeincalgary" target="_blank">YouTube</a>
-    <a href="#" target="_blank">LinkedIn</a>
-    <a href="/cdn-cgi/l/email-protection#7a1e1b0c131e3a09131e141f0309191b0e1b16151d0f1f5419151
+    <a href="https://youtube.com/@morelifeincalgary" target="_blank" rel="noopener">YouTube</a>
+    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+<div class="footer-meta">
+  <p>&copy; 2026 <span class="footer-brand">Sidney's Catalogue Group</span>. All rights reserved.</p>
+</div>
+
+</body>
+</html>
