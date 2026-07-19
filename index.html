@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sidney's Catalogue — Video editing for realtors who show up weekly</title>
+<title>Sidney's Catalogue · Video editing for realtors who show up weekly</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -512,6 +512,67 @@
     color: var(--text-light);
   }
 
+  /* About */
+  .about-block {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .about-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--surface-alt);
+    border: 0.5px solid var(--border);
+    border-radius: 100px;
+    padding: 6px 16px 6px 6px;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-eyebrow .about-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .about-eyebrow span {
+    font-size: 13px;
+    color: var(--text-mid);
+  }
+
+  .about-block h3 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-block p {
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-note {
+    font-size: 13px !important;
+    color: var(--text-light) !important;
+    padding-top: 1.25rem;
+    border-top: 0.5px solid var(--border);
+    margin-top: 2rem;
+  }
+
   /* Footer */
   .footer {
     max-width: 800px;
@@ -784,7 +845,7 @@
     <a href="#" class="nav-logo">Sidney's <span>Catalogue</span></a>
     <div class="nav-links">
       <a href="#how">How it works</a>
-      <a href="#pricing">Waitlist</a>
+      <a href="#pricing">Core package</a>
       <a href="#faq">FAQ</a>
       <a href="#community">Workshop</a>
       <a href="https://calendly.com/sidneyscatalogue/group?month=2026-07" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
@@ -811,7 +872,7 @@
 
 <!-- Hero showcase -->
 <section class="hero-showcase reveal d5">
-  <img src="hero5.jpg" alt="Calgary show home interior — the kind of footage we edit every week" loading="lazy" />
+  <img src="hero5.jpg" alt="Calgary show home interior, the kind of footage we edit every week" loading="lazy" />
 </section>
 
 <!-- How it works -->
@@ -844,15 +905,11 @@
 
 <!-- Pricing -->
 <section class="section" id="pricing">
-  <p class="section-label reveal d5">Pricing</p>
+  <p class="section-label reveal d5">What you get</p>
   <div class="package reveal d5">
     <span class="package-label">Core package</span>
     <h3>4-video retainer</h3>
-    <div class="package-price">
-      <span class="amount">$1,200</span>
-      <span class="per">CAD/month</span>
-    </div>
-    <p class="package-note">or $900 USD &nbsp;·&nbsp; Billed monthly, in advance &nbsp;·&nbsp; Cancel anytime with one month's notice</p>
+    <p class="package-note">Cinematic editing built around your channel and your market. Retainer-based monthly pricing, discussed on our first call so it fits your posting cycle and goals.</p>
     <ul class="check-list">
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>4 edited videos per month</li>
       <li><svg class="check-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 8 7 12 13 4"/></svg>Custom thumbnail per video</li>
@@ -886,7 +943,7 @@
     <div class="why-bar"></div>
     <div class="why-content">
       <blockquote>"We're not freelance editors guessing what realtors need. We run our own channel. We know what works because we do this too."</blockquote>
-      <cite>David Simpson &mdash; Sidney's Catalogue</cite>
+      <cite>David Simpson · Sidney's Catalogue</cite>
     </div>
   </div>
 </section>
@@ -938,6 +995,21 @@
       </button>
       <div class="faq-a"><div class="faq-a-inner">It's a monthly subscription, billed at the start of each month. Cancel anytime with one month's notice.</div></div>
     </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <hr class="section-divider">
+  <div class="about-block">
+    <div class="about-eyebrow">
+      <div class="about-avatar">DS</div>
+      <span>About</span>
+    </div>
+    <h3>The background behind the editing.</h3>
+    <p>Most editors come from post-production. My background is different, and I think it shows in the work. I have a Master's in Film Directing from Edinburgh College of Art, spent years teaching film and communication at the university level in Osaka, Japan, and came up through professional VFX production before any of this.</p>
+    <p>Teaching shaped how I think about structure. Film shaped how I think about audience attention. That combination, educator's mind, filmmaker's eye, is what I bring to every edit. I'm also a working realtor in Calgary, so I'm cutting the same kind of video I shoot for my own channel every week.</p>
+    <p class="about-note">Sidney's Catalogue is a Philip K. Dick reference. That's intentional.</p>
   </div>
 </section>
 
